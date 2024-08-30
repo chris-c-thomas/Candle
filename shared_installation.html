@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CANDLE Shared Installation &mdash; ECP-CANDLE</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=fd3f3429" />
+
+  
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -120,9 +122,9 @@
            <div itemprop="articleBody">
              
   <section id="candle-shared-installation">
-<h1>CANDLE Shared Installation<a class="headerlink" href="#candle-shared-installation" title="Permalink to this heading">¶</a></h1>
+<h1>CANDLE Shared Installation<a class="headerlink" href="#candle-shared-installation" title="Link to this heading">¶</a></h1>
 <section id="terminology-and-scope">
-<h2>Terminology and scope<a class="headerlink" href="#terminology-and-scope" title="Permalink to this heading">¶</a></h2>
+<h2>Terminology and scope<a class="headerlink" href="#terminology-and-scope" title="Link to this heading">¶</a></h2>
 <p>In addition to the CANDLE shared installation being a ready-to-use,
 central installation of CANDLE, it is further a set of scripts that
 adds to the functionality of CANDLE and makes it easier to use for new users.
@@ -147,9 +149,9 @@ for setup (#1) can be found
 the documentation for usage (#2) is below.</p>
 </section>
 <section id="overview-of-wrapper-scripts-functionality">
-<h2>Overview of wrapper scripts functionality<a class="headerlink" href="#overview-of-wrapper-scripts-functionality" title="Permalink to this heading">¶</a></h2>
+<h2>Overview of wrapper scripts functionality<a class="headerlink" href="#overview-of-wrapper-scripts-functionality" title="Link to this heading">¶</a></h2>
 <section id="for-users">
-<h3>For users<a class="headerlink" href="#for-users" title="Permalink to this heading">¶</a></h3>
+<h3>For users<a class="headerlink" href="#for-users" title="Link to this heading">¶</a></h3>
 <ul>
 <li><p><strong>Run CANDLE as a central installation</strong>. E.g., instead of cloning
 the Supervisor and Benchmarks repos as usual and then running a
@@ -212,7 +214,7 @@ will pick up and run without dying</p></li>
 </ul>
 </section>
 <section id="for-developers">
-<h3>For developers<a class="headerlink" href="#for-developers" title="Permalink to this heading">¶</a></h3>
+<h3>For developers<a class="headerlink" href="#for-developers" title="Link to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Modify only a single file whenever the CANDLE-compliance procedure changes</strong>
 (<a class="reference external" href="https://github.com/fnlcr-bids-sdsi/candle_wrappers/blob/master/commands/submit-job/candle_compliant_wrapper.py">candle_compliant_wrapper.py</a>). E.g., if the
@@ -229,7 +231,7 @@ edit each Supervisor workflow’s <code class="docutils literal notranslate"><sp
 </section>
 </section>
 <section id="loading-the-candle-module">
-<h2>Loading the <code class="docutils literal notranslate"><span class="pre">candle</span></code> module<a class="headerlink" href="#loading-the-candle-module" title="Permalink to this heading">¶</a></h2>
+<h2>Loading the <code class="docutils literal notranslate"><span class="pre">candle</span></code> module<a class="headerlink" href="#loading-the-candle-module" title="Link to this heading">¶</a></h2>
 <p>We are currently getting CANDLE approved as user-managed software on
 Summit. Once it is approved, we will be able to load the <code class="docutils literal notranslate"><span class="pre">candle</span></code>
 module via <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">candle</span></code>. In the interim, do this instead:</p>
@@ -252,9 +254,9 @@ able to run <code class="docutils literal notranslate"><span class="pre">import<
 </ul>
 </section>
 <section id="quick-start-examples-for-summit">
-<h2>Quick-start examples (for Summit)<a class="headerlink" href="#quick-start-examples-for-summit" title="Permalink to this heading">¶</a></h2>
+<h2>Quick-start examples (for Summit)<a class="headerlink" href="#quick-start-examples-for-summit" title="Link to this heading">¶</a></h2>
 <section id="step-1-setup">
-<h3>Step 1: Setup<a class="headerlink" href="#step-1-setup" title="Permalink to this heading">¶</a></h3>
+<h3>Step 1: Setup<a class="headerlink" href="#step-1-setup" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the CANDLE module; do the following for the time being in lieu of &quot;module load candle&quot;, as we are currently getting CANDLE approved as user-managed software</span>
 <span class="nb">source</span><span class="w"> </span>/gpfs/alpine/med106/world-shared/candle/env_for_lmod-tf2.sh
 
@@ -264,11 +266,11 @@ able to run <code class="docutils literal notranslate"><span class="pre">import<
 </div>
 </section>
 <section id="step-2-run-sample-candle-compliant-model-scripts">
-<h3>Step 2: Run sample CANDLE-compliant model scripts<a class="headerlink" href="#step-2-run-sample-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h3>
+<h3>Step 2: Run sample CANDLE-compliant model scripts<a class="headerlink" href="#step-2-run-sample-candle-compliant-model-scripts" title="Link to this heading">¶</a></h3>
 <p>This refers to model scripts that the developers refer to as
 “CANDLE-compliant” or “candelized” as usual.</p>
 <section id="nt3-using-upf-candle-compliant-model-scripts">
-<h4>NT3 using UPF (CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-upf-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h4>
+<h4>NT3 using UPF (CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-upf-candle-compliant-model-scripts" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the UPF example (one file will be copied over)</span>
 candle<span class="w"> </span>import-template<span class="w"> </span>upf
 
@@ -278,7 +280,7 @@ candle<span class="w"> </span>submit-job<span class="w"> </span>upf_example.in
 </div>
 </section>
 <section id="nt3-using-mlrmbo-candle-compliant-model-scripts">
-<h4>NT3 using mlrMBO (CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-mlrmbo-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h4>
+<h4>NT3 using mlrMBO (CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-mlrmbo-candle-compliant-model-scripts" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the mlrMBO example (two files will be copied over)</span>
 candle<span class="w"> </span>import-template<span class="w"> </span>mlrmbo
 
@@ -289,13 +291,13 @@ candle<span class="w"> </span>submit-job<span class="w"> </span>mlrmbo_example.i
 </section>
 </section>
 <section id="step-3-run-sample-non-candle-compliant-model-scripts">
-<h3>Step 3: Run sample <strong>non</strong>-CANDLE-compliant model scripts<a class="headerlink" href="#step-3-run-sample-non-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h3>
+<h3>Step 3: Run sample <strong>non</strong>-CANDLE-compliant model scripts<a class="headerlink" href="#step-3-run-sample-non-candle-compliant-model-scripts" title="Link to this heading">¶</a></h3>
 <p>This refers to model scripts that have gone from “bare” (e.g., one
 downloaded directly from the Internet) to “minimally modified,” a
 process described
 <a class="reference external" href="#how-to-minimally-modify-a-bare-model-script-for-use-with-the-wrapper-scripts">below</a>.</p>
 <section id="mnist-using-upf-non-candle-compliant-model-scripts">
-<h4>MNIST using UPF (non-CANDLE-compliant model scripts)<a class="headerlink" href="#mnist-using-upf-non-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h4>
+<h4>MNIST using UPF (non-CANDLE-compliant model scripts)<a class="headerlink" href="#mnist-using-upf-non-candle-compliant-model-scripts" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pre-fetch the MNIST data since Summit compute nodes can&#39;t access the Internet (this has nothing to do with the wrapper scripts)</span>
 mkdir<span class="w"> </span>candle_generated_files
 /gpfs/alpine/world-shared/med106/sw/condaenv-200408/bin/python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from keras.datasets import mnist; import os; (x_train, y_train), (x_test, y_test) = mnist.load_data(os.path.join(os.getcwd(), &#39;candle_generated_files&#39;, &#39;mnist.npz&#39;))&quot;</span>
@@ -309,7 +311,7 @@ candle<span class="w"> </span>submit-job<span class="w"> </span>grid_example.in
 </div>
 </section>
 <section id="nt3-using-mlrmbo-non-candle-compliant-model-scripts">
-<h4>NT3 using mlrMBO (non-CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-mlrmbo-non-candle-compliant-model-scripts" title="Permalink to this heading">¶</a></h4>
+<h4>NT3 using mlrMBO (non-CANDLE-compliant model scripts)<a class="headerlink" href="#nt3-using-mlrmbo-non-candle-compliant-model-scripts" title="Link to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the bayesian example (two files will be copied over)</span>
 candle<span class="w"> </span>import-template<span class="w"> </span>bayesian
 
@@ -321,7 +323,7 @@ candle<span class="w"> </span>submit-job<span class="w"> </span>bayesian_example
 </section>
 </section>
 <section id="how-to-minimally-modify-a-bare-model-script-for-use-with-the-wrapper-scripts">
-<h2>How to minimally modify a bare model script for use with the wrapper scripts<a class="headerlink" href="#how-to-minimally-modify-a-bare-model-script-for-use-with-the-wrapper-scripts" title="Permalink to this heading">¶</a></h2>
+<h2>How to minimally modify a bare model script for use with the wrapper scripts<a class="headerlink" href="#how-to-minimally-modify-a-bare-model-script-for-use-with-the-wrapper-scripts" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Set the hyperparameters in the model script using a dictionary called
 <code class="docutils literal notranslate"><span class="pre">candle_params</span></code></p></li>
@@ -334,7 +336,7 @@ the loss evaluated on a test set) is returned as a number in the
 <p>This is demonstrated in
 <a class="reference external" href="https://github.com/fnlcr-bids-sdsi/candle_wrappers/blob/master/examples/summit-tf2/grid/mnist_mlp.py">$CANDLE/wrappers/examples/summit-tf2/grid/mnist_mlp.py</a>.</p>
 <section id="running-a-non-candle-compliant-model-on-its-own-outside-of-supervisor">
-<h3>Running a non-CANDLE-compliant model on its own, outside of Supervisor<a class="headerlink" href="#running-a-non-candle-compliant-model-on-its-own-outside-of-supervisor" title="Permalink to this heading">¶</a></h3>
+<h3>Running a non-CANDLE-compliant model on its own, outside of Supervisor<a class="headerlink" href="#running-a-non-candle-compliant-model-on-its-own-outside-of-supervisor" title="Link to this heading">¶</a></h3>
 <p>One drawback to minimally modifying a bare model script as opposed to
 making it fully CANDLE-compliant is that the former cannot generally run
 standalone (which you should only do on an interactive node), e.g.,
@@ -364,7 +366,7 @@ script is placed in <code class="docutils literal notranslate"><span class="pre"
 </section>
 </section>
 <section id="input-file-format">
-<h2>Input file format<a class="headerlink" href="#input-file-format" title="Permalink to this heading">¶</a></h2>
+<h2>Input file format<a class="headerlink" href="#input-file-format" title="Link to this heading">¶</a></h2>
 <p>The input file should contain three sections: <code class="docutils literal notranslate"><span class="pre">&amp;control</span></code>,
 <code class="docutils literal notranslate"><span class="pre">&amp;default_model</span></code>, and <code class="docutils literal notranslate"><span class="pre">&amp;param_space</span></code>. Each section should start with
 this header on its own line and end with <code class="docutils literal notranslate"><span class="pre">/</span></code> on its own line. (This
@@ -380,7 +382,7 @@ above</a>, are here:
 Spaces at the beginnings of the content-containing lines are optional
 but are recommended for readability.</p>
 <section id="control-section">
-<h3><code class="docutils literal notranslate"><span class="pre">&amp;control</span></code> section<a class="headerlink" href="#control-section" title="Permalink to this heading">¶</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">&amp;control</span></code> section<a class="headerlink" href="#control-section" title="Link to this heading">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">&amp;control</span></code> section contains all settings aside from those
 specified in the <code class="docutils literal notranslate"><span class="pre">&amp;default_model</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;param_space</span></code> sections
 (detailed below) in the format <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">=</span> <span class="pre">value</span></code>. Spaces around the
@@ -615,7 +617,7 @@ combined. E.g.,
 </table>
 </section>
 <section id="default-model-section">
-<h3><code class="docutils literal notranslate"><span class="pre">&amp;default_model</span></code> section<a class="headerlink" href="#default-model-section" title="Permalink to this heading">¶</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">&amp;default_model</span></code> section<a class="headerlink" href="#default-model-section" title="Link to this heading">¶</a></h3>
 <p>This can contain either a single keyword/value line containing the
 <code class="docutils literal notranslate"><span class="pre">candle_default_model_file</span></code> keyword pointing to the full path of the
 default model text file to use, e.g.,
@@ -628,7 +630,7 @@ examples in the <a class="reference external" href="#quick-start-examples-for-su
 above</a>.</p>
 </section>
 <section id="param-space-section">
-<h3><code class="docutils literal notranslate"><span class="pre">&amp;param_space</span></code> section<a class="headerlink" href="#param-space-section" title="Permalink to this heading">¶</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">&amp;param_space</span></code> section<a class="headerlink" href="#param-space-section" title="Link to this heading">¶</a></h3>
 <p>This can contain either a single keyword/value line containing the
 <code class="docutils literal notranslate"><span class="pre">candle_param_space_file</span></code> keyword pointing to the full path of the
 file specifying the hyperparameter space to use, e.g.,
@@ -652,7 +654,7 @@ above</a> or here:</p>
 </section>
 </section>
 <section id="code-organization">
-<h2>Code organization<a class="headerlink" href="#code-organization" title="Permalink to this heading">¶</a></h2>
+<h2>Code organization<a class="headerlink" href="#code-organization" title="Link to this heading">¶</a></h2>
 <p>A description of what every file does in the <a class="reference external" href="https://github.com/fnlcr-bids-sdsi/candle_wrappers">wrappers
 repository</a>, which
 is cloned to <code class="docutils literal notranslate"><span class="pre">$CANDLE/wrappers</span></code>, can be found
@@ -694,9 +696,9 @@ subdirectory</p></li>
 </ul>
 </section>
 <section id="recommendations-for-particular-use-cases">
-<h2>Recommendations for particular use cases<a class="headerlink" href="#recommendations-for-particular-use-cases" title="Permalink to this heading">¶</a></h2>
+<h2>Recommendations for particular use cases<a class="headerlink" href="#recommendations-for-particular-use-cases" title="Link to this heading">¶</a></h2>
 <section id="run-grid-or-bayesian-hyperparameter-searches-on-an-already-candle-compliant-model-script-such-as-a-benchmark">
-<h3>Run <code class="docutils literal notranslate"><span class="pre">grid</span></code> or <code class="docutils literal notranslate"><span class="pre">bayesian</span></code> hyperparameter searches on an already CANDLE-compliant model script such as a benchmark<a class="headerlink" href="#run-grid-or-bayesian-hyperparameter-searches-on-an-already-candle-compliant-model-script-such-as-a-benchmark" title="Permalink to this heading">¶</a></h3>
+<h3>Run <code class="docutils literal notranslate"><span class="pre">grid</span></code> or <code class="docutils literal notranslate"><span class="pre">bayesian</span></code> hyperparameter searches on an already CANDLE-compliant model script such as a benchmark<a class="headerlink" href="#run-grid-or-bayesian-hyperparameter-searches-on-an-already-candle-compliant-model-script-such-as-a-benchmark" title="Link to this heading">¶</a></h3>
 <p>Note that you can copy a benchmark to your working directory and make
 the modifications there, as the templates show.</p>
 <ol class="arabic simple">
@@ -721,7 +723,7 @@ running <code class="docutils literal notranslate"><span class="pre">candle</spa
 </ol>
 </section>
 <section id="create-a-new-model-script-on-which-you-want-to-run-grid-or-bayesian-hyperparameter-searches">
-<h3>Create a new model script on which you want to run <code class="docutils literal notranslate"><span class="pre">grid</span></code> or <code class="docutils literal notranslate"><span class="pre">bayesian</span></code> hyperparameter searches<a class="headerlink" href="#create-a-new-model-script-on-which-you-want-to-run-grid-or-bayesian-hyperparameter-searches" title="Permalink to this heading">¶</a></h3>
+<h3>Create a new model script on which you want to run <code class="docutils literal notranslate"><span class="pre">grid</span></code> or <code class="docutils literal notranslate"><span class="pre">bayesian</span></code> hyperparameter searches<a class="headerlink" href="#create-a-new-model-script-on-which-you-want-to-run-grid-or-bayesian-hyperparameter-searches" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Enter a directory on Summit’s Alpine filesystem such as
 <code class="docutils literal notranslate"><span class="pre">$MEMBERWORK</span></code></p></li>
@@ -748,12 +750,12 @@ running <code class="docutils literal notranslate"><span class="pre">candle</spa
 </ol>
 </section>
 <section id="run-a-model-script-written-in-another-language-such-as-r-or-bash">
-<h3>Run a model script written in another language such as <code class="docutils literal notranslate"><span class="pre">R</span></code> or <code class="docutils literal notranslate"><span class="pre">bash</span></code><a class="headerlink" href="#run-a-model-script-written-in-another-language-such-as-r-or-bash" title="Permalink to this heading">¶</a></h3>
+<h3>Run a model script written in another language such as <code class="docutils literal notranslate"><span class="pre">R</span></code> or <code class="docutils literal notranslate"><span class="pre">bash</span></code><a class="headerlink" href="#run-a-model-script-written-in-another-language-such-as-r-or-bash" title="Link to this heading">¶</a></h3>
 <p><a class="reference external" href="#how-to-contact-andrew-for-help-with-anything-above">Ask Andrew Weisman</a> to
 test this first because he hasn’t tested it on Summit yet.</p>
 </section>
 <section id="pull-updates-to-the-central-installation-of-candle-that-have-already-been-pulled-into-the-main-supervisor-benchmarks-repositories">
-<h3>Pull updates to the central installation of CANDLE that have already been pulled into the main Supervisor/Benchmarks repositories<a class="headerlink" href="#pull-updates-to-the-central-installation-of-candle-that-have-already-been-pulled-into-the-main-supervisor-benchmarks-repositories" title="Permalink to this heading">¶</a></h3>
+<h3>Pull updates to the central installation of CANDLE that have already been pulled into the main Supervisor/Benchmarks repositories<a class="headerlink" href="#pull-updates-to-the-central-installation-of-candle-that-have-already-been-pulled-into-the-main-supervisor-benchmarks-repositories" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Load the <code class="docutils literal notranslate"><span class="pre">candle</span></code> module via
 <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/gpfs/alpine/med106/world-shared/candle/env_for_lmod-tf2.sh</span></code></p></li>
@@ -766,7 +768,7 @@ this)</p></li>
 </ol>
 </section>
 <section id="commit-changes-to-the-wrapper-scripts-or-to-the-supervisor-or-benchmarks-clones-in-the-central-installation">
-<h3>Commit changes to the wrapper scripts or to the Supervisor or Benchmarks clones in the central installation<a class="headerlink" href="#commit-changes-to-the-wrapper-scripts-or-to-the-supervisor-or-benchmarks-clones-in-the-central-installation" title="Permalink to this heading">¶</a></h3>
+<h3>Commit changes to the wrapper scripts or to the Supervisor or Benchmarks clones in the central installation<a class="headerlink" href="#commit-changes-to-the-wrapper-scripts-or-to-the-supervisor-or-benchmarks-clones-in-the-central-installation" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Load the <code class="docutils literal notranslate"><span class="pre">candle</span></code> module via
 <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">/gpfs/alpine/med106/world-shared/candle/env_for_lmod-tf2.sh</span></code></p></li>
@@ -784,7 +786,7 @@ repositories</p></li>
 </section>
 </section>
 <section id="contribution-ideas">
-<h2>Contribution ideas<a class="headerlink" href="#contribution-ideas" title="Permalink to this heading">¶</a></h2>
+<h2>Contribution ideas<a class="headerlink" href="#contribution-ideas" title="Link to this heading">¶</a></h2>
 <p>Feel free to make any changes you’d like to the code and commit them via
 the <a class="reference external" href="#commit-changes-to-the-wrapper-scripts-or-to-the-supervisor-or-benchmarks-clones-in-the-central-installation">preliminary workflow
 above</a>.
@@ -806,7 +808,7 @@ seeing their usage
 </ul>
 </section>
 <section id="known-issues">
-<h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this heading">¶</a></h2>
+<h2>Known issues<a class="headerlink" href="#known-issues" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><strong>CUDA driver.</strong> If, when running on an interactive node (using <code class="docutils literal notranslate"><span class="pre">run_workflow=0</span></code> in the input file), you get an error like <code class="docutils literal notranslate"><span class="pre">tensorflow.python.framework.errors_impl.InternalError:</span> <span class="pre">cudaGetDevice()</span> <span class="pre">failed.</span> <span class="pre">Status:</span> <span class="pre">CUDA</span> <span class="pre">driver</span> <span class="pre">version</span> <span class="pre">is</span> <span class="pre">insufficient</span> <span class="pre">for</span> <span class="pre">CUDA</span> <span class="pre">runtime</span> <span class="pre">version</span></code> then likely you need to load the CUDA module corresponding to that which is automatically loaded in batch mode, based on the contents of <code class="docutils literal notranslate"><span class="pre">$CANDLE/Supervisor/workflows/common/sh/env-summit-tf2.sh</span></code>; currently, this means that you need to run <code class="docutils literal notranslate"><span class="pre">module</span> <span class="pre">load</span> <span class="pre">cuda/10.2.89</span></code>. Explanation: When following the interactive protocol for testing, only the default version of Python is loaded prior to running the model using the default model settings, as opposed to the CUDA module being loaded as well. Note: This is a relatively new issue.</p></li>
 <li><p><strong>InvalidArgumentError.</strong> You may need to add <code class="docutils literal notranslate"><span class="pre">K.clear_session()</span></code> prior to, say, <code class="docutils literal notranslate"><span class="pre">model</span> <span class="pre">=</span> <span class="pre">Sequential()</span></code> in a Keras-based model. Otherwise, once the same rank runs a model script a <em>second</em> time, we get a strange <code class="docutils literal notranslate"><span class="pre">InvalidArgumentError</span></code> error that kills Supervisor (see the comments in <a class="reference external" href="https://github.com/ECP-CANDLE/Benchmarks/blob/develop/Pilot1/NT3/nt3_candle_wrappers_baseline_keras2.py">$CANDLE/Benchmarks/Pilot1/NT3/nt3_candle_wrappers_baseline_keras2.py</a> for more details). It is wholly possible that this is a bug that has gotten fixed in subsequent versions of Keras/Tensorflow.</p></li>
@@ -814,7 +816,7 @@ seeing their usage
 </ul>
 </section>
 <section id="how-to-contact-andrew-for-help-with-anything-above">
-<h2>How to contact Andrew for help with anything above<a class="headerlink" href="#how-to-contact-andrew-for-help-with-anything-above" title="Permalink to this heading">¶</a></h2>
+<h2>How to contact Andrew for help with anything above<a class="headerlink" href="#how-to-contact-andrew-for-help-with-anything-above" title="Link to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line">Email: <a class="reference external" href="mailto:andrew&#46;weisman&#37;&#52;&#48;nih&#46;gov">andrew<span>&#46;</span>weisman<span>&#64;</span>nih<span>&#46;</span>gov</a></div>
 <div class="line">Slack (ECP-CANDLE workspace): &#64;Andrew Weisman</div>

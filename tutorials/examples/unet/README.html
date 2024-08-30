@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>U-NET Example &mdash; ECP-CANDLE</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -94,7 +96,7 @@
            <div itemprop="articleBody">
              
   <section id="u-net-example">
-<h1>U-NET Example<a class="headerlink" href="#u-net-example" title="Permalink to this heading">¶</a></h1>
+<h1>U-NET Example<a class="headerlink" href="#u-net-example" title="Link to this heading">¶</a></h1>
 <p>The U-Net is a convolutional network architecture designed for image
 segmentation. This architecture captures context and localization
 features precisely and outperforms the traditional convolutional
@@ -105,7 +107,7 @@ or <a class="reference external" href="https://arxiv.org/abs/1505.04597">paper</
 this document, we will use biomedical images to train unet network and
 demonstrate how to run the U-NET with CANDLE library.</p>
 <section id="before-getting-started">
-<h2>Before Getting Started<a class="headerlink" href="#before-getting-started" title="Permalink to this heading">¶</a></h2>
+<h2>Before Getting Started<a class="headerlink" href="#before-getting-started" title="Link to this heading">¶</a></h2>
 <p>Please read <a class="reference external" href="https://github.com/ECP-CANDLE/Supervisor/blob/master/docs/user_guide.adoc">CANDLE Library User Guide</a>.
 This guide explains how to embed your neural
 network in CANDLE compliant way. We provide CANDLE compliant unet
@@ -166,7 +168,7 @@ and <code class="docutils literal notranslate"><span class="pre">unet_candle.py<
 </div>
 </section>
 <section id="download-data-and-pre-process">
-<h2>Download data and pre-process<a class="headerlink" href="#download-data-and-pre-process" title="Permalink to this heading">¶</a></h2>
+<h2>Download data and pre-process<a class="headerlink" href="#download-data-and-pre-process" title="Link to this heading">¶</a></h2>
 <p>Before we start training unet, we need training images. We will use
 Kaggle Competition images. Go to <a class="reference external" href="https://www.kaggle.com/c/ultrasound-nerve-segmentation">Ultrasound Nerve
 Segmentation</a>
@@ -210,7 +212,7 @@ This basically reads all the images and store as an numpy array in
 </div>
 </section>
 <section id="running-unet-example-on-theta">
-<h2>Running UNET example on Theta<a class="headerlink" href="#running-unet-example-on-theta" title="Permalink to this heading">¶</a></h2>
+<h2>Running UNET example on Theta<a class="headerlink" href="#running-unet-example-on-theta" title="Link to this heading">¶</a></h2>
 <p>Once we have data files ready, we need to setup CANDLE framework. You
 will need to clone Benchmarks and Supervisor repositories, and modify
 some evironmental variables to run. Please read <a class="reference external" href="https://github.com/ECP-CANDLE/Supervisor/blob/master/docs/user_guide.adoc">CANDLE
@@ -239,13 +241,13 @@ use full path (starting from <code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 <section id="step1-go-to-workflow-directory">
-<h3>Step1. Go to workflow directory.<a class="headerlink" href="#step1-go-to-workflow-directory" title="Permalink to this heading">¶</a></h3>
+<h3>Step1. Go to workflow directory.<a class="headerlink" href="#step1-go-to-workflow-directory" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$SUPERVISOR</span>/workflows/upf
 </pre></div>
 </div>
 </section>
 <section id="step-2-update-cfg-sys-1-sh-to-config-env-variables">
-<h3>Step 2. Update <code class="docutils literal notranslate"><span class="pre">cfg-sys-1.sh</span></code> to config env variables.<a class="headerlink" href="#step-2-update-cfg-sys-1-sh-to-config-env-variables" title="Permalink to this heading">¶</a></h3>
+<h3>Step 2. Update <code class="docutils literal notranslate"><span class="pre">cfg-sys-1.sh</span></code> to config env variables.<a class="headerlink" href="#step-2-update-cfg-sys-1-sh-to-config-env-variables" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Uncomment below to use custom python script to run</span>
 <span class="c1"># Use file name without .py (e.g, my_script.py)</span>
 
@@ -255,7 +257,7 @@ use full path (starting from <code class="docutils literal notranslate"><span cl
 </div>
 </section>
 <section id="step-3-update-upf-1-txt">
-<h3>Step 3. Update <code class="docutils literal notranslate"><span class="pre">upf-1.txt</span></code><a class="headerlink" href="#step-3-update-upf-1-txt" title="Permalink to this heading">¶</a></h3>
+<h3>Step 3. Update <code class="docutils literal notranslate"><span class="pre">upf-1.txt</span></code><a class="headerlink" href="#step-3-update-upf-1-txt" title="Link to this heading">¶</a></h3>
 <p>Each line is a json doc, and you can modify params like below. This
 example will run 3 training jobs with varying <code class="docutils literal notranslate"><span class="pre">activation</span></code> method and
 <code class="docutils literal notranslate"><span class="pre">optimizer</span></code>.</p>
@@ -266,7 +268,7 @@ example will run 3 training jobs with varying <code class="docutils literal notr
 </div>
 </section>
 <section id="step-4-submit">
-<h3>Step 4. Submit<a class="headerlink" href="#step-4-submit" title="Permalink to this heading">¶</a></h3>
+<h3>Step 4. Submit<a class="headerlink" href="#step-4-submit" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nv">QUEUE</span><span class="o">=</span>default<span class="w"> </span><span class="nv">PROCS</span><span class="o">=</span><span class="m">4</span><span class="w"> </span><span class="nv">WALLTIME</span><span class="o">=</span><span class="m">02</span>:00:00<span class="w"> </span>./test/upf-1.sh<span class="w"> </span>theta
 </pre></div>
 </div>

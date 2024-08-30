@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data preprocessing - feature selection examples &mdash; ECP-CANDLE</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+
+  
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -98,9 +100,9 @@
            <div itemprop="articleBody">
              
   <section id="data-preprocessing-feature-selection-examples">
-<h1>Data preprocessing - feature selection examples<a class="headerlink" href="#data-preprocessing-feature-selection-examples" title="Permalink to this heading">¶</a></h1>
+<h1>Data preprocessing - feature selection examples<a class="headerlink" href="#data-preprocessing-feature-selection-examples" title="Link to this heading">¶</a></h1>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">¶</a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">¶</a></h2>
 <p>Data preprocessing is an important front-end step in data analysis that
 prepares data for subsequent analysis. It not only enables the
 subsequent analysis by processing and transforming data, but also
@@ -128,13 +130,13 @@ predictive and generalizable genes for predicting drug response in the
 precision oncology applications.</p>
 </section>
 <section id="general-data-preprocessing-functions">
-<h2>General Data Preprocessing Functions<a class="headerlink" href="#general-data-preprocessing-functions" title="Permalink to this heading">¶</a></h2>
+<h2>General Data Preprocessing Functions<a class="headerlink" href="#general-data-preprocessing-functions" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">generate_cross_validation_partition</span></code></p>
 <p>To flexibly generate data partitions for cross-validation analysis, such
 as partitioning of grouped samples into sets that do not share groups.</p>
 </section>
 <section id="data-preprocessing-functions-specific-to-pilot-1-applications">
-<h2>Data Preprocessing Functions Specific to Pilot 1 Applications<a class="headerlink" href="#data-preprocessing-functions-specific-to-pilot-1-applications" title="Permalink to this heading">¶</a></h2>
+<h2>Data Preprocessing Functions Specific to Pilot 1 Applications<a class="headerlink" href="#data-preprocessing-functions-specific-to-pilot-1-applications" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">quantile_normalizationa</span></code></p>
 <p>To perform quantile normalization of genomic data [1] with tolerance of
 missing values. <a class="reference external" href="#quantile-normalization-of-gene-expression-data">[see example
@@ -150,7 +152,7 @@ SNP mutations in a genetic pathway. <a class="reference external" href="#generat
 code]</a></p>
 </section>
 <section id="general-feature-selection-functions">
-<h2>General Feature Selection Functions<a class="headerlink" href="#general-feature-selection-functions" title="Permalink to this heading">¶</a></h2>
+<h2>General Feature Selection Functions<a class="headerlink" href="#general-feature-selection-functions" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">select_features_by_missing_values</span></code></p>
 <p>To remove features with (many) missing values. <a class="reference external" href="#select-features-based-on-missing-values">[see example
 code]</a></p>
@@ -163,7 +165,7 @@ correlated with each other. <a class="reference external" href="#select-decorrel
 code]</a></p>
 </section>
 <section id="feature-gene-selection-functions-specific-to-pilot-1-applications">
-<h2>Feature (Gene) Selection Functions Specific to Pilot 1 Applications<a class="headerlink" href="#feature-gene-selection-functions-specific-to-pilot-1-applications" title="Permalink to this heading">¶</a></h2>
+<h2>Feature (Gene) Selection Functions Specific to Pilot 1 Applications<a class="headerlink" href="#feature-gene-selection-functions-specific-to-pilot-1-applications" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">coxen_single_drug_gene_selection</span></code></p>
 <p>To perform co-expression extrapolation (COXEN) analysis [3] that selects
 predictive and generalizable genes for predicting the response of tumor
@@ -173,11 +175,11 @@ cells to a specific drug.</p>
 of tumor cells to multiple drugs in precision oncology applications.</p>
 </section>
 <section id="running-the-example">
-<h2>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">¶</a></h2>
+<h2>Running the example<a class="headerlink" href="#running-the-example" title="Link to this heading">¶</a></h2>
 <p>The code demonstrates feature selection methods that CANDLE provides.</p>
 <p>It can be run by executing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">M16_test.py</span></code></p>
 <section id="download-data">
-<h3>Download data<a class="headerlink" href="#download-data" title="Permalink to this heading">¶</a></h3>
+<h3>Download data<a class="headerlink" href="#download-data" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># download all the data if needed from the repo</span>
 <span class="n">data_url</span> <span class="o">=</span> <span class="s1">&#39;http://ftp.mcs.anl.gov/pub/candle/public/benchmarks/Pilot1/uno/Candle_Milestone_16_Version_12_15_2019/Data/Data_For_Testing/&#39;</span>
@@ -204,7 +206,7 @@ of tumor cells to multiple drugs in precision oncology applications.</p>
 </div>
 </section>
 <section id="download-gene-set">
-<h3>Download gene set<a class="headerlink" href="#download-gene-set" title="Permalink to this heading">¶</a></h3>
+<h3>Download gene set<a class="headerlink" href="#download-gene-set" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># download all the gene_set files needed</span>
 <span class="n">data_url</span> <span class="o">=</span> <span class="s1">&#39;http://ftp.mcs.anl.gov/pub/candle/public/benchmarks/Pilot1/uno/Candle_Milestone_16_Version_12_15_2019/Data/Gene_Sets/MSigDB.v7.0/&#39;</span>
@@ -241,7 +243,7 @@ of tumor cells to multiple drugs in precision oncology applications.</p>
 </div>
 </section>
 <section id="select-features-based-on-missing-values">
-<h3>Select features based on missing values<a class="headerlink" href="#select-features-based-on-missing-values" title="Permalink to this heading">¶</a></h3>
+<h3>Select features based on missing values<a class="headerlink" href="#select-features-based-on-missing-values" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing select_features_by_missing_values&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Drug descriptor dataframe includes 10 drugs (rows) and 10 drug descriptor features (columns)&#39;</span><span class="p">)</span>
@@ -279,7 +281,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="select-features-based-on-variation">
-<h3>Select features based on variation<a class="headerlink" href="#select-features-based-on-variation" title="Permalink to this heading">¶</a></h3>
+<h3>Select features based on variation<a class="headerlink" href="#select-features-based-on-variation" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing select_features_by_variation&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Select features with a variance larger than 100&#39;</span><span class="p">)</span>
@@ -300,7 +302,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="select-decorrelated-features">
-<h3>Select decorrelated features<a class="headerlink" href="#select-decorrelated-features" title="Permalink to this heading">¶</a></h3>
+<h3>Select decorrelated features<a class="headerlink" href="#select-decorrelated-features" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing select_decorrelated_features&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Select features that are not identical to each other and are not all missing.&#39;</span><span class="p">)</span>
@@ -321,7 +323,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="generate-cross-validation-partitions-of-data">
-<h3>Generate cross-validation partitions of data<a class="headerlink" href="#generate-cross-validation-partitions-of-data" title="Permalink to this heading">¶</a></h3>
+<h3>Generate cross-validation partitions of data<a class="headerlink" href="#generate-cross-validation-partitions-of-data" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing generate_cross_validation_partition&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Generate 5-fold cross-validation partition of 10 samples twice&#39;</span><span class="p">)</span>
@@ -368,7 +370,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="quantile-normalization-of-gene-expression-data">
-<h3>Quantile normalization of gene expression data<a class="headerlink" href="#quantile-normalization-of-gene-expression-data" title="Permalink to this heading">¶</a></h3>
+<h3>Quantile normalization of gene expression data<a class="headerlink" href="#quantile-normalization-of-gene-expression-data" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing quantile_normalization&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gene expression data of 897 cell lines (columns) and 17741 genes (rows).&#39;</span><span class="p">)</span>
@@ -422,7 +424,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="generate-gene-set-level-data">
-<h3>Generate gene-set-level data<a class="headerlink" href="#generate-gene-set-level-data" title="Permalink to this heading">¶</a></h3>
+<h3>Generate gene-set-level data<a class="headerlink" href="#generate-gene-set-level-data" title="Link to this heading">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing generate_gene_set_data&#39;</span><span class="p">)</span>
 <span class="n">gene_set_data</span> <span class="o">=</span> <span class="n">candle</span><span class="o">.</span><span class="n">generate_gene_set_data</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">norm_data</span><span class="p">),</span> <span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">norm_data</span><span class="o">.</span><span class="n">index</span><span class="p">],</span> <span class="n">gene_name_type</span><span class="o">=</span><span class="s1">&#39;entrez&#39;</span><span class="p">,</span>
                                        <span class="n">gene_set_category</span><span class="o">=</span><span class="s1">&#39;c6.all&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">standardize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">data_dir</span><span class="o">=</span><span class="n">data_dir</span><span class="p">)</span>
@@ -470,7 +472,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </div>
 </section>
 <section id="combat-batch-normalization-on-gene-expression-data">
-<h3>Combat batch normalization on gene expression data<a class="headerlink" href="#combat-batch-normalization-on-gene-expression-data" title="Permalink to this heading">¶</a></h3>
+<h3>Combat batch normalization on gene expression data<a class="headerlink" href="#combat-batch-normalization-on-gene-expression-data" title="Link to this heading">¶</a></h3>
 <p>Code</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing combat_batch_effect_removal&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gene expression data of 60 NCI60 cell lines and 1018 CCLE cell lines with 17741 genes.&#39;</span><span class="p">)</span>
@@ -555,7 +557,7 @@ Feature<span class="w"> </span>IDs<span class="w"> </span><span class="o">[</spa
 </section>
 </section>
 <section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">¶</a></h2>
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Bolstad BM, Irizarry RA, Astrand M, et al. (2003) <em>A comparison of
 normalization methods for high density oligonucleotide array data
